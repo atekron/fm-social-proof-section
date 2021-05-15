@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url("/images/bg-pattern-top-mobile.svg") top left no-repeat,
+    url("/images/bg-pattern-bottom-mobile.svg") bottom left no-repeat;
+  background-size: 100% 232px, 100% 503px;
+}
+
+.container {
+  margin: 2rem auto;
+  max-width: 22rem;
+  text-align: center;
+}
+
+header {
+  margin: 2rem auto;
+}
+
+header h1 {
+  font-weight: 700;
+  margin: 2rem;
+  font-size: 2.2rem;
+}
+
+header p {
+  color: var(--dark-grayish-magenta);
+  font-weight: 500;
+  line-height: 1.7;
+  padding: 0.2rem;
+  /* font-size: 1.1rem; */
+}
+
+.ratings {
+  font-weight: 700;
+  font-size: 0.9rem;
+  width: 22rem;
+}
+
+.rating {
+  background-color: var(--light-grayish-magenta);
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.rating p {
+  margin-top: 1rem;
+}
+
+/* .rating p {
+  display: inline;
+} */
+
+.reviews {
+  margin-top: 3rem;
+}
+
+.card {
+  position: relative;
+  text-align: left;
+  background-color: var(--very-dark-magenta);
+  color: white;
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+  height: 17rem;
+  padding: 2rem 2rem;
+  width: 22rem;
+}
+
+.card h4 {
+  margin-top: 0.5rem;
+  margin-left: 4.5rem;
+}
+
+.card h6 {
+  margin-top: 0.2rem;
+  margin-left: 4.5rem;
+  color: var(--dark-grayish-magenta);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.card p {
+  color: var(--light-grayish-magenta);
+  margin-top: 2rem;
+  line-height: 1.7;
+  font-size: 0.9rem;
+}
+
+.card img {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
